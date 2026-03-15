@@ -1,0 +1,93 @@
+dictionary:
+ 1)ordered,
+Before Python 3.6: 
+Dictionaries were unordered 
+(i.e., the order of elements was not maintained).
+  
+2)collection of key-value pair.
+3)features of key,
+ key may be container,single valued,
+ key should be unique,
+ if key is duplication , new key-value pair overwrite
+ old key-value pair
+ key must be immutable .
+
+d = {}
+d= dict()
+print(d,type(d))
+d = {1:"mon",2:"tue",1:"jan"}
+d= {1:"a",2.2:"b",(2,3,4):"c",frozenset((2,3)):5}
+print(len(d))
+print(d)
+
+
+
+4)dict rep
+
+{key : value,key1:value1}
+    
+
+
+
+
+
+key ,value 
+
+ex:
+name--------------->phone num,image,email,............
+exam:
+
+roll + pass ------------------> exam 
+
+
+a=90
+b=89
+print(a,b)
+a,b = b,a 
+print(a,b)
+
+#extend
+d = {1:"mon",2:"tue"}
+print(d[1]) # access
+d[1] = "jan" # update
+print(d)
+#LHS  = RHS
+d[2] = d[1]
+print(d)
+d = {1:"mon",2:"tue"}
+d[1],d[2]=d[2],d[1]
+print(d)
+
+d = {1:"mon",2:"tue"}
+d[3] = "wed"
+d[1] = "jan"
+a={4:"thus",5:"fri",6:"sat"}
+d.update(a)
+print(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

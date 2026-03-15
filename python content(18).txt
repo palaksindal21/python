@@ -1,0 +1,88 @@
+function calling inside the body of function.
+
+WAP to create a small console based project having
+following functionality.(Employee Manegement System)
+
+
+1)insert_record()
+2)display_record()
+3)search_name()
+4)search_gender()
+5)update_record()
+6)filter_experience()
+7)delete_last_record()
+8)delete_any_record()
+
+Employee -->name,eid,dep,des,sal,gender,year.
+
+
+
+
+def insert_records(records):
+    num = int(input("How many????"))
+    for i in range(num):
+       name=input("enter name:")
+       eid=int(input("enter id:"))
+       dep=input("enter dep:")
+       sal=int(input("enter sal:"))
+       year=int(input("enter year:"))
+       gen=input("enter gender:")
+       records[eid]=[name,dep,sal,year,gen]
+    return records
+
+def display_records(records):
+   print(records)
+
+
+
+
+
+
+
+
+def master(records):
+  while True:
+    print("*"*45,"EMS","*"*45)
+    print("Enter 1 for insert records")
+    print("Enter 2 for display records")
+    print("Enter 3 for search records by name")
+    print("Enter 4 for search records by gender")
+    print("Enter 5 for update records")
+    print("Enter 6 filter records by experience")
+    print("Enter 7 for delete last record")
+    print("Enter 8 for delete any record")
+    print("Enter 9 for Exit ")
+    ch=int(input("enter ur choice:"))
+    if ch == 9:
+       print("thank u")
+       break
+    elif ch == 1:
+      records = insert_records(records)
+    elif ch ==2 :
+       display_records(records)
+
+
+
+
+
+records = {}
+master(records)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

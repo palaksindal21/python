@@ -1,0 +1,74 @@
+# sort() ,reverse()
+# inplace function.: no new objects created.
+
+lis = ["krish","shubham","palak","mihir"]
+print(lis)
+lis.sort(reverse=True)
+# lis.sort()
+print(lis)
+==================================================
+# sort() ,reverse()
+# inplace function.: no new objects created.
+
+lis = ["krish","shubham","palak","mihir"]
+print(lis)
+lis.reverse()
+print(lis)
+=========
+# delete objects
+# pop(),remove(),clear(), 
+# del statement
+# pop()-->return deleted value(default)
+# pop(index)
+lis = ["krish","shubham","palak","mihir"]
+print(lis)
+deleted_value = lis.pop(1)
+print(lis)
+print(deleted_value)
+=======================================
+# delete objects
+# pop(),remove(),clear(), 
+
+lis = ["krish","shubham","palak","mihir","palak","mihir","palak"]
+print(lis)
+
+name = input ("enter name :")
+lis.remove(name)
+print(lis)
+==============
+
+lis = ["krish","shubham","palak","mihir","palak","mihir","palak"]
+print(lis)
+
+lis.clear()
+print(lis)
+=======================================
+# for loop
+
+# syntax :
+'''
+for control_variable in iterator :
+    # body
+
+'''
+for i in range(10): # i=0,1
+    print(i)
+
+
+=========================================
+# for loop
+# range(a,b,c)
+# a ->start (by default 0)
+# b ->end mandatory(excluded)
+# c-> jump (bydefault 1)
+
+for i in range(2,60,2):#2,5,8,11.............
+    print(i,end=" ")
+print()
+for i in range(2):# b
+    print(i,end=" ")
+print()
+for i in range(2,50):# a,b
+    print(i,end=" ")
+
+

@@ -1,0 +1,53 @@
+temp = float(input("enter temp:"))#5
+
+if temp<0:
+    print("Freezing weather")
+elif temp>=0 and temp<10 :
+    print("very cold weather")
+elif temp>=10 and temp<20 :
+    print("cold weather")
+
+=====================================================
+cost_price = int(input("enter cost price :"))
+dis=0
+if cost_price <= 100 :
+    print("No discount")
+elif cost_price>100 and cost_price<=500 :
+    dis = cost_price *10/100
+    print("10% discount",dis)
+elif cost_price>500 and cost_price<=1000 :
+    dis = cost_price *20/100
+    print("20% discount",dis)
+else:
+    dis = cost_price *30/100
+    print("30% discount",dis)
+
+    
+print("you have to pay rs ",cost_price-dis)
+==============================================================
+2024  2028  2032........2096 2100NLY
+2104  2108  2112 .......2196 2200NLY
+2204  2208...................2300NLY
+2304  2308..............2396..2400LY
+==============================================================
+
+year = int(input("enter year:"))
+'''
+         (year%4==0 and year%100!=0)
+#2024--> year%4==0  and 2024%100
+        2024%4==0         24 !=0
+           T       and    T
+                   T
+        (year%4==0 and year%100!=0)
+#2100--> 2100%4 ==0 and 2100%100 !=0
+           T             0 !=0
+           T  and          F
+              F
+
+
+
+'''
+if (year%4==0 and year%100!=0) or year%400==0 :
+    print("leap year")
+else:
+    print("not a leap year")

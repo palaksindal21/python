@@ -1,0 +1,46 @@
+
+salary = int(input("enter ur salary:"))
+year = int(input("Enter year of service :")) 
+bonus = salary*5/100
+
+if year>5 :
+    print("Bonus :",bonus)
+    print("Final Salary",salary+bonus)
+else:
+    print("No Bonus \nFinal salary:",salary)
+
+#  (5*10)/2  = 25
+#  (5/2)*10  = 25
+
+=====================================================
+quantity = int(input("enter quantity:"))#12
+cost = int(input("enter cost:"))
+
+total = quantity*cost #1200
+
+if total >1000:
+    discount = total *10/100 # 1200*10/100 =120
+    print("discount:",discount)
+    print("u have to pay:",total-discount)
+else:
+    print("no discount:")
+    print("u have to pay:",total)
+=============================================================
+ladder                      |                 nesting
+reportcard.,                        authentication
+5000   5%                           entrance exam
+10000   10%
+15000  20%
+
+if condition1:                          if condition:
+    body1                                   if  condition:
+elif condition2:                                 body
+    body2
+elif condition3:
+    body3
+else:
+     body4
+
+
+
+

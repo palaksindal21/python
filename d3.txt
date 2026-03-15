@@ -1,0 +1,121 @@
+
+n1 = int(input("enter num 1:"))
+n2 = int(input("enter num 2:"))
+n3 = int(input("enter num 3:"))
+
+if n1<n2 and n1<n3:
+    print(n1,"is smallest")
+    if n2<n3:
+        print(n2,"is second smallest")
+    else:
+        print(n3,"is second smallest")
+
+elif n2<n1 and n2<n3 :
+    print(n2,"is smallest")
+    if n1<n3:
+        print(n1,"is second smallest")
+    else:
+        print(n3,"is second smallest")
+
+else:
+    print(n3,"is smallest")
+    if n1<n2:
+        print(n1,"is second smallest")
+    else:
+        print(n2,"is second smallest")
+
+====================================================================================
+print('''
+please select any of the following Alphabet
+A) km to m
+B) m to km
+C)celsius to fahrenheit
+D)fahreheit to celcius
+''')
+
+ch = input("enter ur choice:")
+
+if ch == "A":
+    km = float(input("enter kilometer:"))
+    m = km * 1000
+    print(m ," meters ")
+elif ch == "B":
+    pass
+elif ch == "C":
+    celsius = float(input("enter celcius:"))
+    fah = celsius*(9/5)+32
+    print(fah,"fahrenhiet")
+==============================================================================================
+WAP to determine whether a number is even or odd? 
+also through nesting u have determine whether this number is
+a multiple of 7 or not.
+
+ex:
+ num = 24
+ 24 is even
+ 24 is not a multiple of 7
+
+ num = 14
+ 14 is even
+ 14 is a multiple of 7
+
+  num = 21
+ 21 is odd
+ 14 is a multiple of 7
+=======================================
+print('''
+please select any of the following Alphabet
+A) km to m
+B) m to km
+C)celsius to fahrenheit
+D)fahreheit to celcius
+''')
+
+ch = input("enter ur choice:")
+
+if ch == "A":
+    km = float(input("enter kilometer:"))
+    m = km * 1000
+    print(m ," meters ")
+elif ch == "B":
+    pass
+elif ch == "C":
+    celsius = float(input("enter celcius:"))
+    fah = celsius*(9/5)+32
+    print(fah,"fahrenhiet")
+    print("{:.2f} fahrenhiet".format(fah))
+
+    # " {}  fafafaff".format()
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,60 @@
+# pop() ,popitem(), setdefault()
+d = {1:"mon",2:"tue",3:"wed"}
+
+print(d)
+deleted_value = d.pop(2)
+print(d,deleted_value)
+
+deleted_value = d.popitem()
+print(d,deleted_value)
+=====================================
+# pop() ,popitem(), setdefault()
+# key available 
+# no changes ,corresponding value return 
+# key not available
+# changes(add key -value pair) ,new value return 
+d = {1:"mon",2:"tue",3:"wed"}
+result = d.setdefault(11,"jan") # django environment set.
+print(d)
+print(result)
+# result = d.setdefault(1,"jan")
+# print(d)
+# print(result)
+
+=======================================
+# get() -->return value
+d = {1:"mon",2:"tue",3:"wed"}
+
+result = d.get(22)
+print(result)
+
+# result = d[22] # subscript operator
+# print(result)
+===========================================
+# get() -->return value
+d = {1:"mon",2:"tue",3:"wed"}
+key=int(input())
+
+if d.get(key):
+   result = d.get(key)
+   print(result)
+
+# result = d[22] # subscript operator
+# print(result)
+
+============================================================
+# get() -->return value
+d = {1:"mon",'2':"tue",3.5:"wed"}
+key=input("enter:")
+
+for i,j in d.items():
+     if str(i)==key:
+          print(d.get(i))
+          break
+
+==================================================================
+# loop ,update,if-else,{}
+d = {1:"mon",2:"tue",6:"sat",7:"sun"}
+d1= {3:"wed",4:"thus",5:"fri"}
+
+

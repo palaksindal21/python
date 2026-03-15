@@ -1,0 +1,35 @@
+abstract base class : it is one of the most important features of OOPs
+here programmer define a class merely for designing purpose ,
+here n numbers of function declare not defined .this decleared
+f() are called abstract f(), there is a possibility that some
+function are defined .
+we can't create an object of ABC,
+Implementation(defination) of abstract method are going to be done 
+in their respective child class ,all implementation of abstract method 
+is mandatory.
+===========================================================================
+from abc import abstractmethod,ABC
+class  PhonePe(ABC):
+     @abstractmethod
+     def recharge(self):
+         pass
+     @abstractmethod
+     def payment(self):
+          pass
+     @abstractmethod
+     def bill_pay(self):
+          pass
+     def intro(self):
+          print("this is payment app")
+class  User(PhonePe):
+     def recharge(self):
+         print("recharge done")
+     def bill_pay(self):
+         print("payment done")
+     def payment(self):
+          pass
+obj=User()
+obj.intro()
+obj.bill_pay()
+obj.recharge()
+obj.payment()

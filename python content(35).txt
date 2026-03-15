@@ -1,0 +1,23 @@
+class BankAccount:
+    bank_name = "BOB" 
+    def __init__(self):
+        self.account_number=int(input("enter Account Number:")) # (public member)
+        self._password =input("enter password:")# (protected member)
+        self.__pin =input("enter pin:")# (private member)
+    def display_detail(self):
+        print("User AN:",self.account_number)
+        print("User Password:",self._password)
+        print("User Pin:",self.__pin)
+ 
+class Customer(BankAccount):
+    pass
+
+obj = BankAccount()
+obj.account_number=99999
+print(obj.__pin)
+obj.display_detail()
+
+
+
+
+

@@ -1,0 +1,49 @@
+# function /methods in dict
+#============================
+d = {1:"mon",2:"tue",3:"wed"}
+for i in d: # i ->key
+   print(i,d[i])
+#keys(),values(),items()
+keys = d.keys()
+print(keys,type(keys))
+values = d.values()
+print(values,type(values))
+items = d.items()
+print(items,type(items))
+
+=============================================
+# function /methods in dict
+#============================
+d = {1:"mon",2:"tue",3:"wed"}
+for i in d.values():
+   print(i)
+for i in d.items():
+   print(i)
+
+# 2 control variable (for)
+for i,j in d.items():# (1,"mon")
+   print(i,j)
+lis = [[1,2,3,4],['ajay','akash','mohit',None]]
+
+for i,j,k,l in lis:# packing ,unpacking
+   print(i,j,k,l)
+
+
+=====================================================================================================
+# nested dictionary
+records = {
+    "101" : {"name":"ajay","age":24,"marks":[23,22,34,56]},
+    "102" : {"name":"vikas","age":26,"marks":[23,44,5,6]},
+    "103" : {"name":"aman","age":21,"marks":[77,8,5,44]},
+}
+records["104"]={"name":"tarun","age":22,"marks":[4,5,6,7]}
+#print(records)
+#print(records["101"],type(records["101"]))
+records["101"]["stream"] = "science"
+records["102"].update({"stream":"art"})
+print(records)
+print(type(records["103"]["marks"]))
+records["103"]["marks"][1][2]=88
+print(records)
+records["103"].update({"marks":[77,100,5,44]})
+print(records)

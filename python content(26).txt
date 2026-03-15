@@ -1,0 +1,39 @@
+# raise statement
+# user defined exception raise.
+# Application --->
+# a = int(input("Enter number between 1 -100 :"))
+
+# if a>=1 and a<=100:
+#     print("Cube:",a**3)
+# else:
+#     raise Exception("can't handle input outside range(1-100)")
+li = [22,44,5,6,7,66]
+print(li)
+a = int(input("Enter number :"))
+if a in li:
+    print("Cube:",a**3)
+else:
+     raise Exception("can't handle input outside list ")
+  
+
+
+==================================================================================
+
+try:
+    try:
+        pass
+    except:
+        pass
+finally:
+    pass
+
+==================================================================================
+
+try:
+    pass
+    try:
+       print("1"+1)    
+    except:
+        print("inner exception")
+except:
+    print("outer exception")

@@ -1,0 +1,116 @@
+parameter/argument(optional)
+----------------------------
+sometime we need to pass some value to a function
+and the function should works with this value to
+perform operation,
+
+
+return value(optional)
+----------------------
+sometime we need an output value from function,
+as we have a requirement of it,
+
+features of python lang.
+
+1)general purpose lang.
+2)Object Oriented lang.
+3)strong typed lang.
+print(1+1)
+print("1"+"1")
+print(1+"1")   #-->error
+print(str(1)+"1")  #--> typecasting
+
+4)dynamic typed lang.
+
+int num;
+num=90;
+
+num = 90
+num = "90"
+num = [90,90,90]
+
+5)it has a default garbage collector . (automatically call gc() )
+ dereference .
+
+
+
+05-02-2025
+-------------------------------------------------------------
+print("welcome",end=" ")
+print("to",end=" ")
+print("classroom")
+
+comments
+# single line comment
+
+'''
+multi line 
+comment
+'''
+
+---------------------------------------------------------------
+number1 = 90
+number2 = 976
+number3 = 23
+number4 = 976
+
+print(id(number1)) # id() return heap memory address
+print(id(number2))
+print(id(number3))
+print(id(number4))
+
+================================
+'''
+                   (indexing)    (ordered)     (unordered)
+numerals           sequence       mapping        set            None 
+
+int                list          dictionary      set            None
+float              tuple                        frozenset
+complex(3+5j)      string
+bool(True or False)
+
+'''
+============================================
+# input() bydefault take string as a input
+
+
+n1 = int(input("enter number 1:")) # int typecast
+n2 = int(input("enter number 2:"))
+
+print("add:",n1+n2)
+
+
+==========================================================
+n1= int(input("enter n1:"))
+n2= int(input("enter n2:"))
+print("add of",n1,"and",n2,":",n1+n2)
+print("sub of",n1,"and",n2,":",n1-n2)
+print("product of",n1,"and",n2,":",n1*n2)
+print("division of",n1,"and",n2,":",n1/n2)
+print("mod of",n1,"and",n2,":",n1%n2)
+print(n1**n2) # exponential operator n1 to the power n2
+
+#floor division
+'''
+     5 ceil 
+4.5 
+     4 floor
+
+'''
+print(24//5) #4.8-> 4
+print(24//4) #6
+print(4//24) #0
+
+sub="python"
+print("we are here to learn "+sub)
+print("w"*100)
+
+
+
+
+
+
+
+
+
+

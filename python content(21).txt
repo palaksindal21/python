@@ -1,0 +1,68 @@
+'''
+kwargs , args -->task
+lambda function :anonymous function
+(function without having name )
+
+Syntax:
+
+lambda  args : expression 
+ex:
+lambda a,b,c : a+b+c
+'''
+
+
+l1 = lambda  a,b : a+b
+l2 = lambda a : a*a*a
+print(l1(23,4))
+print(l2(4))
+
+
+=====================================================================================
+from functools import reduce
+
+lis = [2,3,4,5,6]
+l1 = lambda a:a*a
+sum = reduce(lambda a,b:a+b,lis)
+print(sum,l1)
+
+================================================================================
+
+# map(),reduce(),lambda(),filter()
+# decorater() ,generator()
+
+# list comprehension
+#[expression loop (if )]
+lis = [23,4,33,2,9]
+
+a= [i*i for i in lis]
+print(a)
+# l=[]
+# for i in lis :
+#      l.append(i*i)
+
+a= [i*i for i in lis if i%2==0]
+print(a)
+
+
+=======================================================
+
+records = [
+        [101,"mihir",45000],
+        [102,"krish",50000],
+        [103,"shubham",40000],
+]
+name = [i[1] for i in records if i[2]>=45000]
+print(name)
+name = [i for i in records if i[2]>=45000]
+print(name)
+
+
+
+
+
+
+
+
+
+
+

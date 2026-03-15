@@ -1,0 +1,65 @@
+# append()
+# RETURN FUNCTION , NON - RETURN(None)
+
+lis = [2,3,4,5]
+print(lis)
+lis.append("66")
+print(lis) 
+
+=======================
+# extend()
+
+lis = [2,3,4,5]
+print(lis)
+lis2 = [44,66,7,88,9,22]
+lis.extend(lis2)
+#lis.append(lis2)
+print(lis) 
+================================
+# index()
+
+lis = [2,3,4,5,566,7,67,4,4,56,7,7,6,]
+print(lis)
+index_number = lis.index(4)
+#index_number = lis.index(4,2,6)
+#lis.append(lis2)
+print(index_number) 
+index_number = lis.index(4,index_number+1) #(4,3)
+print(index_number) # 7
+index_number = lis.index(4,index_number+1)
+print(index_number)
+
+=======================
+
+
+
+
+
+# count()->frequency of element
+
+lis = [2,3,4,5,566,7,67,4,4,56,7,7,6,]
+
+n=lis.count(49)
+print(n)
+==========================================================
+# insert(pos,element)->insert element to pos
+
+lis = [2,3,4,5,566,7,67,4,4,56,7,7,6,]
+
+
+lis.insert(4,90)
+print(lis)
+
+======================================================
+
+# len() ,max(),min(),sum()
+
+lis = [2,3,4,5,566,7,67,4,4,56,7,7,6]
+names = ["ajay","tarun","subham"]
+print("length",len(lis))
+print("max",max(lis))
+print("min",min(lis))
+print("sum",sum(lis))
+print("max",max(names))
+print("min",min(names))
+#print("sum",sum(names)) error

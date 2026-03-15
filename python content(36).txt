@@ -1,0 +1,235 @@
+class BankAccount:
+    bank_name = "BOB" 
+    def __init__(self):
+        self.account_number=int(input("enter Account Number:")) # (public member)
+        self._password =input("enter password:")# (protected member)
+        self.__pin =input("enter pin:")# (private member)
+    def display_detail(self):
+        print("User AN:",self.account_number)
+        print("User Password:",self._password)
+        print("User Pin:",self.__pin)
+ 
+class Customer(BankAccount):
+    pass
+
+obj = BankAccount()
+obj.account_number=99999
+print(obj.__pin)
+obj.display_detail()
+
+
+
+
+
+=========================
+
+# Access specifier
+# =================(convention)
+# public : normal
+# private: __ (underscore)
+# protected: _ (underscore)
+class A:
+    __data=90
+
+obj = A()
+obj._A__data=999999
+print(obj.__dict__)
+'''
+Note:
+in python we have a convention that every private member is represented by(__)(prefix)
+and protected memebr by (_), we have to follow this convention.
+to secure private data we can't use double under score since, by default python
+compiler mangled _ClassName as a prefix to attribute name ,and any body use them
+in public domain.
+'''
+==============================================================================================
+
+class Person: # Base
+    def __init__(self,name,gender):
+        self.name=name
+        self.gender=gender
+    def person_info(self):
+        print("Name:",self.name,"Gender",self.gender)
+
+class Employee(Person):
+    def __init__(self,name,gender, eid , department):
+        super().__init__(name,gender)
+        #Person.__init__(self,name,gender)
+        self.eid=eid
+        self.department=department
+    def employee_info(self):
+        super().person_info()
+        print("Eid:",self.eid,"Department",self.department)
+
+
+
+
+        
+        
+# emp = Employee("Ajay","male",101,"HR")
+# emp.employee_info()
+
+# obj = Person("ajay","male")
+# obj.person_info()
+
+===============================================================================================
+
+class Person: # Base
+    def __init__(self,name,gender):
+        self.name=name
+        self.gender=gender
+    def person_info(self):
+        print("Name:",self.name,"Gender",self.gender)
+class Employee(Person):
+    def __init__(self,name,gender, eid , department):
+        super().__init__(name,gender)
+        self.eid=eid
+        self.department=department
+    def employee_info(self):
+        super().person_info()
+        print("Eid:",self.eid,"Department",self.department)
+
+class PartTimeEmployee(Employee):
+    def __init__(self,name,gender, eid , department,hour,day):
+        super().__init__(name,gender, eid , department)
+        self.hour=hour
+        self.day=day
+    def part_time_employee_info(self):
+        super().employee_info()
+        print("Total Working Hours:",self.hour,"Working Day",self.day)
+
+obj=PartTimeEmployee("ajay","male",101,"HR",5,24)
+obj.part_time_employee_info()
+
+hierarchical
+=================
+
+class Person: # Base
+    def __init__(self,name,gender):
+        self.name=name
+        self.gender=gender
+    def person_info(self):
+        print("Name:",self.name,"Gender",self.gender)
+class Employee(Person):
+    def __init__(self,name,gender, eid , department):
+        super().__init__(name,gender)
+        self.eid=eid
+        self.department=department
+    def employee_info(self):
+        super().person_info()
+        print("Eid:",self.eid,"Department",self.department)
+
+class PartTimeEmployee(Employee):
+    def __init__(self,name,gender, eid , department,hour,day):
+        super().__init__(name,gender, eid , department)
+        self.hour=hour
+        self.day=day
+    def part_time_employee_info(self):
+        super().employee_info()
+        print("Total Working Hours:",self.hour,"Working Day",self.day)
+
+
+class FullTimeEmployee(Employee): # hierarchical 
+    def __init__(self,name,gender, eid , department,monthly_wage):
+        super().__init__(name,gender, eid , department)
+        self.monthly_wage = monthly_wage
+    def full_time_employee_info(self):
+        super().employee_info()
+        print("Total Salary:",self.monthly_wage)
+
+obj=FullTimeEmployee("ajay","male",101,"HR",25000)
+obj.full_time_employee_info_time_employee_info()
+
+===================================================================
+Diamond problem
+================
+
+class A:
+    def __init__(self):
+        print("A constructor")
+class B(A):
+    def __init__(self):
+        A.__init__(self)
+        print("B constructor")
+class C(A):
+    def __init__(self):
+        A.__init__(self)
+        print("C constructor")
+class D(B,C):
+    def __init__(self):
+        B.__init__(self)
+        C.__init__(self)
+        print("D constructor")
+obj = D()
+
+====================================================================
+MRO
+====
+
+class A:
+    def __init__(self):
+        print("A constructor")
+class B(A):
+    def __init__(self):
+        super().__init__()
+        print("B constructor")
+class C(A):
+    def __init__(self):
+        super().__init__()
+        print("C constructor")
+class D(B,C):
+    def __init__(self):
+        super().__init__()
+        print("D constructor")
+obj = D()
+print(D.__mro__) # method resolution operation
+
+
+=================================================================
+
+class Person: # Base
+    def __init__(self,name,gender):
+        self.name=name
+        self.gender=gender
+    def person_info(self):
+        print("Name:",self.name,"Gender",self.gender)
+class Employee(Person):
+    def __init__(self,name,gender, eid , department):
+        super().__init__(name,gender)
+        self.eid=eid
+        self.department=department
+    def employee_info(self):
+        super().person_info()
+        print("Eid:",self.eid,"Department",self.department)
+
+class Transfer(Person):
+    def transfer(self,city):
+        print(self.name,"transfer to",city)
+
+class FullTimeEmployee(Employee,Transfer): # hierarchical 
+    def __init__(self,name,gender, eid , department,monthly_wage):
+        super().__init__(name,gender, eid , department)
+        self.monthly_wage = monthly_wage
+    def full_time_employee_info(self):
+        super().employee_info()
+        print("Total Salary:",self.monthly_wage)
+
+obj=FullTimeEmployee("ajay","male",101,"HR",25000)
+obj.full_time_employee_info()
+obj.transfer("bhopal")
+
+
+        
+
+
+
+
+
+        
+
+
+
+
+        
+
+

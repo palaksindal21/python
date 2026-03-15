@@ -1,0 +1,41 @@
+class Bigger:
+    def __init__(self,number):
+        self.number=number
+    def __gt__(self,obj):
+        if self.number > obj.number:
+             return Bigger(self.number)
+        return Bigger(obj.number)
+
+    def high(self):
+        print("highest number ",self.number)
+
+obj1=Bigger(253)
+obj2=Bigger(425)
+obj3=Bigger(42225)
+obj4=Bigger(4225)
+result = obj1>obj2>obj3>obj4
+result.high()
+==============================================================
+
+class ComplexNumber:
+    def __init__(self,real,imaginary):
+        self.real=real
+        self.imaginary=imaginary
+    def __add__(self,n): # dunder method(magic method)
+    #    print("+ redefine")
+    #    print(n.real)
+        #print(self.real + n.real,"+", self.imaginary + n.imaginary,"j")
+        return ComplexNumber(self.real + n.real,self.imaginary + n.imaginary)
+     
+    def display(self):
+        print(self.real,"+", self.imaginary,"j")
+
+
+obj1=ComplexNumber(3,4)
+obj2=ComplexNumber(7,17)
+obj3=ComplexNumber( 1,1)
+obj1.display()
+result=obj1+obj2 +obj3 #  obj1.__add__(obj2)
+#print(type(result))
+result.display()
+#obj1+obj2 #operator overload

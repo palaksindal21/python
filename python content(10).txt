@@ -1,0 +1,75 @@
+# index(),count(0)
+s1 = "its now or never"
+
+for i in range(len(s1)):
+      print(s1[i],"----------->",i)
+
+print(s1.index("w"))
+
+=========================================================
+# split(),join()
+s1 = "its now or never"
+lis = s1.split()
+print(lis)
+li=[]
+for i in lis: # "its"
+    a=i[::-1]
+    li.append(a)
+print(li)
+s=".".join(li)
+print(s)
+
+====================================
+set:
+unique
+unordered 
+mutable
+
+
+
+
+s1 = {23,4,5,"wwww","pqr",6,6,6,6,6,334,77}
+
+print(type(s1),s1)
+
+if 6 in s1:
+    print("set me he")
+else:
+    print("set me nhi he")
+
+
+s1.add(99999999)
+
+s1 = {23,4,5,"wwww","pqr",6,6,6,6,6,334,77}
+s1.discard(66)
+s1.remove(66)
+print(type(s1),s1)
+
+if 6 in s1:
+    print("set me he")
+else:
+    print("set me nhi he")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+empty set:
+==========
+
+s1 = set()
+
+print(type(s1),s1)

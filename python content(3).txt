@@ -1,0 +1,70 @@
+WAP to determine the sum of n natural number.
+n=7
+1+2+3+4+5+6+7=ans
+
+n=2
+1+2=3
+n=4
+=============
+n = int(input("enter range:")) #4
+sum = 0
+
+for i in range(1,n+1):# i=1,2
+    sum = sum + i
+    if i<n:
+        print(i,"+",end=" ")
+    else:
+        print(i,"=",end=" ")
+
+print(sum)
+
+==========================
+
+n = int(input("enter range:")) #4
+sum = 0
+
+for i in range(1,n+1):# i=1,2
+    sum = sum + i# sum=0+1=1,sum=1+2=3
+
+print("Sum:",sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WAP to determine the sum of n number.
+n=3
+enter number: 23
+enter number: 7
+enter number: 2
+---------------------
+              32
+WAP to determine the sum of even number
+amoung n number.
+WAP to determine the sum of odd number
+amoung n number.
+WAP to determine the sum of even and odd seperately
+amoung n number.
+===================
+
+
+
+n = int(input("enter range:")) #4
+sum = 0
+
+for i in range(n):# 0,1,2,3
+    num = int(input("enter num:")) #33,4,6,2
+    sum = sum + num#sum = 0+33=33,sum=33+4=37,sum=37+6=43,sum=43+2=45
+
+print("Sum:",sum)

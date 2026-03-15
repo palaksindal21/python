@@ -1,0 +1,69 @@
+#frozen set:
+# immutable object
+# unordered data type,
+# application
+# data important order not important , no modification.
+# frozen set is used to create a dictionary keys,
+# set and frozen set speed is faster then tuple,list
+s1 = {"a","e","i","o","u"}
+s2 = {"e","e","u",1,2,}
+f1=frozenset(s1)
+f2=frozenset(s2)
+f3 =f1 | f2
+f3 =f1 & f2
+f3 =f1 - f2
+f3=list(f3)
+f4= frozenset([2,3,44,5,3,3,3,3])
+print(f4)
+print(type(f3))
+
+
+
+# add ()--> immutable objects add
+s1 = {"a","e","i","o","u"}
+s2 = ("a","e","i","o","u")
+s1.add(s2)
+print(s1)
+# update() ->immutable ,mutable -> all element of iterable become part
+# of set.
+
+s1 =  {"a","e","i","o","u"}
+s2 = (1,2,3,4)
+s1.update(s2)
+print(s1)
+
+
+
+
+
+lis = [["ajay","raj","sohail","divya"],23,4,2]
+#lis[0][3]="faraj"
+#lis[0[3]]
+lis[lis[3]]="faraj"
+#lis[2]="faraj"
+print(lis)
+
+st = "435252532532"
+
+lis[int(st[3])]="faraj"
+print(lis)
+
+
+
+
+lis = [["ajay","raj","sohail","divya"],23,4,2]
+lis[0].append("mohit")
+print(lis)
+
+t = (["ajay","raj","sohail","divya"],23,4,2)
+print(type(t))
+print(type(t[0]))
+t[0].append("mohit")
+print(t)
+
+
+t = [(2,3),1]
+#
+t[0][1]=99
+# t[0]=99
+# print(t)
