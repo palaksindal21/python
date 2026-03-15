@@ -1,0 +1,181 @@
+
+#argument vs parameter
+
+def add(a,b):
+    print("sum:",a+b)
+
+
+
+add(2,4) # argument passing
+
+n1=int(input("enter n1:"))
+n2=int(input("enter n2:"))
+add(n1,n2) # parameter passing
+
+
+
+
+def add(a,b,c):
+    print("sum:",a+b)
+    print(c)
+
+
+add(2,"done",4) 
+
+============
+
+#scope of variable
+# global 
+# local
+msg = "global variable"
+
+def add():
+    a=90  # local variable
+    b=23
+    print("sum:",a+b)
+    print(msg)
+   
+
+add()
+#print(a) local #error
+
+
+=================================
+#scope of variable
+# global 
+# local
+#msg = "global variable" works
+
+def add():
+    a=90  # local variable
+    b=23
+    print("sum:",a+b)
+    print(msg)
+   
+msg = "global variable"
+add()
+#print(a) local #error
+#msg = "global variable" error
+
+=======================================================
+def add():
+    a=90  # local variable
+    b=23
+    msg = "local variable"  # locality of reference
+    print("sum:",a+b)
+    print(msg)
+   
+
+msg = "global variable"
+add()
+
+=======================================================
+
+# declare defined global variable  inside the body of function
+# we can't take access of local variable in global scope but vice-versa is possible.
+
+def add():
+   global msg
+   msg = "hello"
+   print(msg)
+   
+add()
+
+print(msg)
+
+===============================================================
+
+# default arguments
+
+def add(b,a=0,c=0,d=0):
+    print("Add:",a+b+c+d)
+
+
+
+add(20,45,56,65)
+
+add(20,45,56)
+add(20,45)
+#parameter without a default follows parameter with a default
+# add(20)
+   
+======================================================================
+'''
+*****
+*****
+*****
+*****
+*****
+*****
+'''
+# for i in range(10,51): # 0
+#     for j in range(1,11):# 0
+#         print(i,"x",j,"=",i*j)
+#     print()
+# # for every iteration of outer loop, inner loop get completely executed.
+
+# n = int(input("enter:"))
+# s=str(n)
+# #print(s,type(s))
+# if s == s[::-1] :
+#     print("palindrome")
+# else:
+#     print("not a palindrome")
+
+
+
+# for i in range(100,2000):
+#     s=str(i)
+#     if  s == s[::-1]:
+#          print(i,end=" ")
+
+=============================================
+for i in range(6):
+    print("*"*5)
+
+for i in range(1,6):
+    print("*"*i)
+
+for i in range(6):
+    print("*"*5)
+
+for i in range(1,7):
+    print("*"*i)
+
+for i in range(5,0,-1):
+    print("*"*i)
+
+
+k=4
+for i in range(0,5):
+    print(" "*k+"*"*(2*i+1))
+    k=k-1
+
+'''
+i=0
+    *
+   ***
+  *****
+'''
+
+'''
+    *
+   ***
+  *****
+ *******
+*********
+'''
+
+
+      
+
+
+
+
+
+
+
+
+
+
+

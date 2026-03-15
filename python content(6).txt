@@ -1,0 +1,53 @@
+
+
+
+WAP to create a game puzzle in which user have to guess
+a number with following condition.
+
+1)range (1-100) # (random module)
+2)attempt (5)
+3)help user by indicating the message ("u type higher/lower ")
+import random
+random_number = random.randint(1,100)
+print(random_number)
+i = 1
+while i <= 5 : 
+    guess_number = int(input("guess a number:"))
+    if guess_number == random_number :
+        print("you won !!!\ncongrats ")
+        break
+    elif guess_number > random_number :
+        print("number entered is higher ")
+    else:
+        print("number entered is lower ")
+    print("chance remaining ",5-i)
+    if (5-i)== 0:
+        print("u lose the game\ncorrect number:",random_number)
+    i = i+1
+    
+===============================
+n terms 
+n=10
+0  1 1 2 3 5 8 13 21 34
+
+upto n
+n=10
+0  1 1 2 3 5 8
+
+
+
+
+
+
+n1 = 0
+n2 = 1
+n = int(input("enter n terms:")) #5
+print(n1,n2,end=" ")
+
+while n > 2 :
+    n3 = n1 + n2
+    print(n3,end=" ")
+    n1 = n2
+    n2 = n3
+    n = n-1 
+    

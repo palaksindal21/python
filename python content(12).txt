@@ -1,0 +1,17 @@
+s= "we are here to learn dsa"
+lis=s.split()
+li = []
+for i in lis :# "we"
+    li.append(i[0].upper()+i[1:-1].lower()+i[-1].upper())
+print(li)
+
+
+
+s1 = {"a","e","i","o","u"}
+s2 = {"e","e","u",1,2,}
+
+s3 = s1 & s2
+s4 = s1 | s2
+s5 = s1 - s2
+s6 = s1.symmetric_difference(s2)
+print(s3,s4,s5,s6)

@@ -1,0 +1,61 @@
+
+
+stu_record = [["Ajay",24,"science"],
+             ["Aman",33,"Art"],
+             ["vikas",31,"commerce"]]
+
+
+
+n = int(input("how many record do u want to insert:"))#4
+stu_records = []
+for i in range(n):
+    name = input("Enter name:")
+    age = int(input("Enter age:"))
+    stream = input("enter stream:")
+    stu_records.append([name , age ,stream])
+
+#print(stu_records)
+c = 1
+for i in stu_records:#i=['Ajay', 24, 'science']
+    print("Student record number:",c)
+    print("Name:",i[0])
+    print("Age:",i[1])
+    print("Stream:",i[2])
+    print()
+    c=c+1
+
+c = 1
+print("S.no\tName\t\tAge\t\tStream")
+for i in stu_records:#i=['Ajay', 24, 'science']
+    print(c,"\t",i[0],"\t\t",i[1],"\t\t",i[2])
+    c=c+1
+
+
+
+=============================================================================
+stu_record = [["Ajay","Aman","vikas"],
+             [22,33,44],
+             ["Science","arts","commerce"]]
+
+n = int(input("how many record do u want to insert:"))#4
+stu_records = []
+names = []
+ages = []
+streams =[]
+for i in range(n):
+    name = input("Enter name:")
+    age = int(input("Enter age:"))
+    stream = input("enter stream:")
+    streams.append(stream)
+    names.append(name)
+    ages.append(age)
+    
+
+stu_records=[names,ages,streams]
+print(stu_records)
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+Access specifiers ---
+private and non private
+non private - 2 types public and protected
+public (usual name)
+private (start with __)
+protected (start with _)
+we can make data and function public private and protected..
+
+
+class BankAccount:
+    bank_name = "BOB"
+    def __init__(self):
+        self.account_number = int(input("Enter your account number:"))
+        self.__password = int(input("Enter your password:"))
+        
+    def __password_change(self):  #private function
+        pass = input("Enter your new password:")
+        if pass == self.__password:
+            pass = input("enter your new password:")
+            self.__password = pass #private members access internally in class
+    def display_details(self):
+        print("account number:",self.account_number)
+        print("password:",self.__password)
+        
+        
+       
+obj = BankAccount()
+
+print("account number:",obj.account_number)
+print("account password:",obj.__password)  #we can not access password because it is private

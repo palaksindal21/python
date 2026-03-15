@@ -1,0 +1,108 @@
+# raise statement
+# user defined exception raise.
+# Application --->
+# a = int(input("Enter number between 1 -100 :"))
+
+# if a>=1 and a<=100:
+#     print("Cube:",a**3)
+# else:
+#     raise Exception("can't handle input outside range(1-100)")
+li = [22,44,5,6,7,66]
+print(li)
+a = int(input("Enter number :"))
+if a in li:
+    print("Cube:",a**3)
+else:
+     raise Exception("can't handle input outside list ")
+  
+
+
+==================================================================================
+
+try:
+    try:
+        pass
+    except:
+        pass
+finally:
+    pass
+
+==================================================================================
+
+try:
+    pass
+    try:
+       print("1"+1)    
+    except:
+        print("inner exception")
+except:
+    print("outer exception")
+
+=======================================================================================
+
+
+module  module  module                   
+fileA   fileB   fileC   SubPackage     __init__.py
+A        B       C      __init__.py
+                         fileX
+                         fileY
+                          D
+
+
+====================================================================================================
+
+# file1.py
+# 50 function
+# function ,
+def cube(a):
+    print("Cube",a**3)
+def square(a):
+    print("square",a**2)
+
+if __name__ == "__main__":# unit testing
+   print(__name__,type(__name__))
+   cube(4)
+   square(5)
+
+
+=============================================================================================================
+# file2.py
+
+import file1 # line 10 "file1"
+
+#print(__name__,"file2.py") #"__main__"
+#print("aaaaaaaaaaaaa")
+'''
+1)
+__name__ : "__main__" # when we run same file where it defined
+
+2)
+__name__ : "file_name" # when we run other file ,where it is defined
+                      # and that file imported in currently running
+                      # file.'
+                      ''
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

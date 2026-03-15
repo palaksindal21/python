@@ -1,0 +1,78 @@
+# break -->terminate loop immedietly
+# continue --> next iteration shift (if any)
+
+
+for i in range(1,11):
+    if i == 5:
+        break
+    print(i)  # 1 2 3 4
+
+
+for i in range(1,11):
+    print(i) # 1 2 3 4 5
+    if i == 5:
+        break 
+
+for i in range(1,11):
+    if i == 5:
+        continue
+    print(i) # 1 2 3 4 6 7 8 9 10
+
+for i in range(1,11):
+    print(i) # 1 2 3 4 5 6 7 8 9 10
+    if i == 5:
+        continue # meaningless
+
+==========================================
+for i in range(1,11):
+    if i == 2:
+        continue
+    if i == 5:
+        pass
+    if i == 7:
+        break
+    print(i)
+===========================================
+
+
+#list ,string.
+
+
+lis = [20,3,4,5,6,"wer"]
+st1 = "python 7777"
+for i in range(10):
+    print(i,type(i))
+print("+"*50)
+print(st1)
+for i in st1:
+    print("welcome-->",i,type(i))
+print("+"*50)
+print(lis)
+for i in lis:
+    print("welcome-->",i,type(i))
+
+
+===================================================
+
+
+n = int(input("enter range:")) #4
+sum = 0
+for i in range(n):
+    pass
+
+i = 0
+while i < n :# 0<4
+    num = int(input("enter number:"))
+    sum = sum + num
+    i = i+1
+print("Sum:",sum)
+
+
+
+    
+    
+
+
+
+    
+    

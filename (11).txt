@@ -1,0 +1,69 @@
+#method of string .
+# lower(),upper(),capitalize(),--> return string
+# isalpha(),isdigit() ,isupper() ,islower(),---->boolean (True /False)
+
+s = "apple is good 4 health"
+
+output = s.lower()
+print(output)
+
+s = "apple is good 4 health"
+
+output = s.isalpha()
+print(output)
+
+s = "apple is good 4 health"
+
+output = s.capitalize()
+print(output)
+
+
+s = "apple is good 4 #$%^&*&^%$#@ hEalth"
+
+output = s.islower()
+print(output)
+
+
+=============================
+# split()  --> string method
+#        --> return list
+#  join() 
+
+s = "apple is good 4 health"
+lis = s.split(" ",2)
+print(s)
+print(lis)
+
+#  join() ->iterable(element string) input
+        # return string
+
+lis = ["apple","banana","pineapple","orange","90"]
+
+
+s=" and ".join(lis)
+print(s)
+
+
+
+s = "222222222222 33333333333"
+
+output = s.isdigit()
+print(output)
+
+
+length = 90
+bredth = 12
+
+area = length*bredth
+
+print("length:",length,"breadth:",bredth,"Area:",area)
+
+a="length: {2} breadth: {0} Area: {2}".format(2*length,bredth,area)
+print(a)
+
+
+#  replace(old,new)
+
+s= "apple is good for health,banana is good for "
+s=s.replace("good","bad",1)
+print(s)

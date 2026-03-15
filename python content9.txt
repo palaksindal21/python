@@ -1,0 +1,97 @@
+n = int(input("how many record do u want to insert:"))#4
+stu_records = [[],[],[]]
+
+for i in range(n):
+    name = input("Enter name:")
+    age = int(input("Enter age:"))
+    stream = input("enter stream:")
+    stu_records[0].append(name)
+    stu_records[1].append(age)
+    stu_records[2].append(stream)
+print(stu_records)
+=========================================================================
+tuple:
+1)container
+2)immutable
+3)ordered data -type
+4)heterogenous(repetation allowed)
+5)faster work as compared to list.
+6)representation -->()
+=========================================
+t1 = (22,3,"wwww")
+#print(type(t1))
+#print(t1)
+#print(t1[1])
+#t1[2]= 90
+
+t1 = "apple"
+print(t1)
+
+
+t1 = 22,3,88,9
+print(type(t1))
+# single element
+t2 = (23,)
+print(type(t2))
+
+-------------------
+
+
+t1 = (2,3,4,5)
+del t1
+t1=9
+print("w")
+=============================================
+# count(),index(),min(),max(),sum(),
+# 
+
+==============================================
+# . method (define class)
+# function -->len() ,sorted()
+
+t1 = (-9,2,3,4,4,-5,44,3)
+lis = sorted(t1) # return sorted list
+print(t1)
+print(lis)
+
+============================================
+#WAP to capitalized each element of a given tuple t.
+t = ("appLE","baNAna","pineApple")
+lis = list(t)
+print(lis)
+'''
+k=0
+for i in lis:
+    lis[k]=i.capitalize()
+    k = k+1
+'''
+for i in range(len(lis)):
+     lis[i]=lis[i].capitalize()
+t= tuple(lis)
+print(t)
+
+
+
+
+
+#a="raHUL"
+#print(a.capitalize())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+# access specifier in python.
+# private  and     non -private
+#                public    protected
+=============================================================
+class BankAccount:
+    bank_name = "BOB"
+    def __init__(self):
+        self.account_number=int(input("enter Account Number:"))
+        self.__password =input("enter password:")
+    def __password_change(self):
+        pas=input("enter ur current password:")
+        if pas == self.__password:
+            pas=input("enter ur new password:")
+            self.__password=pas # private member access internally in class
+    def display_detail(self):
+        print("User AN:",self.account_number)
+        print("User Password:",self.__password)
+    def utility_function(self):
+        self.__password_change()
+
+
+obj = BankAccount()
+
+#print("User AN:",obj.account_number)
+#print("User password:",obj.__password) # __password -->private member.
+
+obj.display_detail()
+#obj.__password_change() # ->private member.
+obj.utility_function()
+obj.display_detail()

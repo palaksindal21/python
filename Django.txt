@@ -1,0 +1,135 @@
+Django 
+When we create some project it is essential to keep this project in an isolated environment, in this environment we placed all the required dependencies may vary from project to project , and do not interfere with each other.
+----------------------------------------------------------------------------------------------------------
+Task - mvt v/s mvc
+
+python -m venv myenv  ---> virtual environment
+
+With the help of batch file python project runs.
+cd directory name--> change directory
+.\activate ---> activate virtual environment
+
+pip install Django 
+python.exe -m pip install --upgrade pip
+
+cd.. --> change to previous directory
+
+django-admin startproject projectname --> create project command
+-----------------------------------------------------------------------------------------------------------
+Framework:pre defined codes 
+codes--->modules,class,function,methods
+----->help rapid development of web applications
+framework--->control flow 
+Framework is responsible to perform actions, we can modify the behaviour but maximum flow is decided by framework
+
+--------------------------------------------------------------------------------------------------------
+Library--->pre defined codes 
+codes--->modules,class,function,methods
+control flow--->user
+
+---------------------------------------------------------------------------------------------------------
+djangoproject.com
+---------------------------------------------------------------------------------------------------------
+MVT model (Model,view,template)
+
+Model-->Database logic
+
+Views-->Business logic(Functions,class, )
+
+
+Template-->HTML,CSS
+------------------------------------------------------------------------------------------------------
+djang-admin startproject projectname
+firstproject(project folder)
+    firstproject(inner project folder/default app)
+    manage.py(command line utility)(python script used to run commands )(Django's command line utility for administrative tasks)
+
+
+
+
+myenv(virtual env)(dependencies)
+py manage.py
+pyhton manage.py runserver
+port number for django 8000
+ctrl+c-------------->stop server
+settings.py ------->controls project settings
+urls.py------>routing 
+asgi --->asynchronous server gateway interface
+wsgi---> wave server gateway interface
+------------------------------------------------------------------------------------------------------
+Python was created by Guido van Rossum, born in 1956 in Haarlem, the Netherlands.
+
+------------------------------------------------------------------------------------------------------
+GitHub -- version control system
+ git config --global user.name "palak"
+ git config --global user.email "palaksindal21@gmail.com"
+
+git add .
+git commit -m "respositary name"
+-------------------------------------------------------------------------------------------------------------------------------------
+static intro ---
+create folder template and static in app
+app/template/app/files
+app/static/app/css js images
+
+------------------------------------------------------------------------------------------------------------------------------------
+Models---
+CRUD operation
+ model ==> database
+Object relation mapper (ORM)
+
+object ----------------->relation
+
+class define --------------> TABLE(RELATION)
+
+PYTHON CLASS-----------------> SQL TABLE
+  ATTRIBUTE -----------------> COLUMN
+  OBJECTS -------------------> RECORDS
+
+
+
+PYTHON CODE ----> table create, update, insert, display --> query set
+QUERY SET ----> we write python script with the help of query set , this query set internally get converted into sql queries, and perform the given operations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

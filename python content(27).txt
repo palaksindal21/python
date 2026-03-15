@@ -1,0 +1,39 @@
+
+class Fruit:
+    def __init__(self): # instance/object variable
+        self.name=input("enter name :")
+        self.taste=input("enter taste :")
+        self.color=input("enter color :")
+        self.shape=input("enter shape :")
+        self.price=float(input("enter price :"))
+    def display(self): # instance/object variable
+        print("Name",self.name)
+        print("Taste",self.taste)
+        print("Color",self.color)
+        print("Shape",self.shape)
+        print("Price",self.price)
+       
+
+obj1 = Fruit()
+obj1.display()
+
+
+#mango,apple,pineapple
+# name,taste,color,shape,price
+
+=====================================================
+class Highest:
+    def __init__(self):
+        self.n1=int(input("enter:"))
+        self.n2=int(input("enter:"))
+        self.n3=int(input("enter:"))
+
+    def high(self):# self hold object refernce
+        if self.n1>self.n2  and   self.n1>self.n3 :
+              print(self.n1,"is bigger")
+        elif self.n2>self.n1  and   self.n2>self.n3 :
+              print(self.n2,"is bigger")
+        else:
+              print(self.n3,"is bigger")
+obj1= Highest()
+obj1.high()

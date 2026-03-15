@@ -1,0 +1,51 @@
+# data -type 
+# sequence 
+# list
+# multiple elements (container)
+# ordered data-type
+# indexing to get particular element
+# list is a container which contain multiple objects
+# of heterogeneous type.
+# whereas in array we contain multiple objects
+# of homogeneous type.
+
+
+# features
+# mutable type 
+# representation--> []
+# repetation allowed
+# slower then tuple,
+
+#       0       1       2          3             4        5
+lis = [101 , "rahul" , "male" , "9898989898",[23,45,455],True]
+#       -6    -5        -4         -3           -2       -1                                                  -1       
+# mutation 
+print(lis)
+lis[-1] = False   # lis[5] = False
+print(lis)
+# access
+print("name :",lis[1],"gender:",lis[2])
+
+=======================================================
+
+#                                             E   S  M
+lis = [101 , "rahul" , "male" , "9898989898",[23,45,455],True]
+#                                                4
+#                                             0  1   2
+#                                             
+print("E marks:",lis[4][0])
+print("S marks:",lis[4][1])
+lis[4][2]=99
+print(lis)
+print(lis[1][2])
+
+lis = [1,2,3] + [23,44,33]
+print(lis)
+
+# function (method)
+# append()
+lis = [9,32,5,6,5]
+lis.append("rrr")
+print(lis)
+
+

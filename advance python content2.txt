@@ -1,0 +1,30 @@
+
+
+class Employee:
+     def promotion(self):
+          print("year experience >5 ")
+     def salary(self):
+          print(" salary prepared ")
+class Executive(Employee):
+     def salary(self): #redefine
+          print(" salary +shares +equity+ allowances ")
+
+emp = Executive()
+emp.promotion()
+emp.salary()
+
+==========================================================
+
+
+class PlayAudio:
+    def play(self):
+        print("playing audio")
+class Playvedio:
+    def play(self):
+        print("playing vedio")
+class PlayGame:
+    def play(self):
+        print("playing Game")
+t=(PlayAudio(),PlayGame(),Playvedio())
+for i in t:
+    i.play()

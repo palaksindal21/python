@@ -1,0 +1,68 @@
+k,
+
+while condition :
+    # body of while loop
+
+================================================
+
+control_variable intialized
+
+while condition :
+    # body of while loop
+    # update_control_variable
+=================================================
+
+
+choice = "yes"
+
+while choice == "yes":
+    n1 = int(input("enter n1:"))
+    n2 = int(input("enter n2:"))
+    print("Sum:",n1+n2)
+    choice = input("do u want to continue type 'yes' " 
+    "otherwise any other character ")
+
+
+=======================================================
+digit extraction from a number
+===================================
+1)armstrong number or not,
+2)palindrome number or not,
+3)sum of each digit of a number
+   122  = 1+2+2 = 5
+
+
+153  = 1^3 + 5^3 + 3^3 = 153 
+        1  + 125  + 27 = 153
+
+
+1634 = 1^4 + 6^4 + 3^4 + 4^4 
+        1  +  1296 + 81 + 256 = 1634
+
+========================================================================
+
+
+num = int(input("enter number:")) # 153
+temp = num # 153
+sum = 0
+while num>0 : #153>0 ,15>0,1>0             , 0>0 false
+    last = num % 10  #153%10 =3 # last = 15%10 =5 , last = 1%10 =1
+    sum = sum + (last**3) # sum= 0+3^3=27 ,sum=27+5^3=152,sum=152+1=153
+    num = num // 10  # num = 153//10 =15,num = 15//10=1,num=1//10 =0
+
+if sum == temp :
+    print("armstrong")
+else:
+    print("no")
+
+
+
+
+
+
+
+
+
+
+
+

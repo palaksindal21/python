@@ -1,0 +1,124 @@
+#>,<,>=,<=,==,!=
+num1 = int(input("enter number 1:"))
+num2 = int(input("enter number 2:"))
+print(num1,">",num2,num1>num2)
+# print(23>=6) 
+print(4==4)
+print(5!=6)
+
+
+fruit1 = "bapple" # 97
+fruit2 = "banana" # 98
+
+#ASCII 
+# a-97 b-98 c-99................z=122
+# A-65 B-66 C-67 ...............Z-90
+# 0-48 1-49 2-50 ................
+# Lexicographical order.
+# Lexicographical comparision on the basis of ascii
+# American Standard Code For Information Interchange
+print(fruit1>fruit2)
+
+
+
+
+
+and (binary) (authentication)
+
+u p   access
+0 0   0
+0 1   0
+1 0   0
+1 1   1
+
+
+or (binary)
+
+pan aadhar
+id1 id2  entry
+0    0    0
+0    1    1
+1    0    1
+1    1    1  
+
+not (unary)
+
+0 1
+1 0
+
+====================
+#membership operator (in , not in)
+
+s="apple is good 4 health"
+print(s not in s ) #F
+print("a" in s)
+print("apple" in s)
+print("elppa" in s) #F
+print("good4" in s)  #F
+print("health " in s) #F
+
+============================================
+
+
+# identity operator
+# is ,is not
+# if the object belong to same id , means
+# both reference points to same object, then is return True
+
+a=90
+b=89
+c=90
+print(a is b) #F
+print(a is c) #T
+
+============================================
+num = 124
+
+if num==90:
+    print("if body sta_1")
+    print("if body sta_2")
+else:  
+    print("else body")
+
+print("out of if-else")
+===============================================
+# upper() --> alphabet change into uppercase (if required)
+# lower() --> alphabet change into lowercase (if required)
+
+age = int(input("enter age:"))
+nation = input("enter ur nationality 'indian' or 'others'  ???")
+# INDIAN
+if age>=18 and nation.lower() == "indian" :
+    print("u r eligible")
+else:   # optional
+    print("u r not eligible")
+==========================================
+# upper() --> alphabet change into uppercase (if required)
+# lower() --> alphabet change into lowercase (if required)
+# strip
+
+age = int(input("enter age:"))
+nation = input("enter ur nationality 'indian' or 'others'  ???")
+
+if age>=18 and nation.lower().strip() == "indian" :
+    print("u r eligible")
+else:   # optional
+    print("u r not eligible")
+===============================================
+age = int(input("enter age:"))
+nation = input("enter ur nationality 'indian' or 'others'  ???")
+nation = nation.strip()
+if age>=18 and nation.lower() == "indian" :
+    print("u r eligible")
+else:   # optional
+    print("u r not eligible")
+
+==================================================
+choice = input("Enter any character :") #P
+
+vowels = "AEIOUaeiou"
+if choice in vowels:
+    print("vowel")
+else:
+    print("not a vowel")
+

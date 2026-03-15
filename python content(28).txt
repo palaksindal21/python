@@ -1,0 +1,39 @@
+class Highest:
+    def __init__(self,num1,num2,num3): # parameterized
+        self.n1=num1
+        self.n2=num2
+        self.n3=num3
+
+    def high(self):# self hold object refernce
+        if self.n1>self.n2  and   self.n1>self.n3 :
+              print(self.n1,"is bigger")
+        elif self.n2>self.n1  and   self.n2>self.n3 :
+              print(self.n2,"is bigger")
+        else:
+              print(self.n3,"is bigger")          
+obj1= Highest(24,5,66)
+obj1.high()
+
+
+=====================================================================
+
+
+class Highest:
+     data = 90 # class variable
+     def __init__(self,a,b): # instance variable
+          self.d1=a
+          self.d2=b
+
+obj1= Highest(24,50)
+obj2= Highest(33,89)
+print("class variable data",obj1.data)
+print("instance variable d1:",obj1.d1," d2:",obj1.d2)
+print("class variable data",obj2.data)
+print("instance variable d1:",obj2.d1," d2:",obj2.d2)
+obj1.data="this is my data"
+
+print("class variable data",obj1.data) #obj1 redefine class variable
+print("instance variable d1:",obj1.d1," d2:",obj1.d2)
+print("class variable data",obj2.data) #obj2 get value from class variable
+print("instance variable d1:",obj2.d1," d2:",obj2.d2)
+
