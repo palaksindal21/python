@@ -1,12 +1,17 @@
 num = int(input("Enter number:"))
 
-sqr = num**2
+if num>1:
+   for i in range(2,num):
+      if num%i == 0:
+         print(num,"is not a prime number")
+         break
+   else:
+         print(num,"is prime number")
 
-if num < 1:
-    print(num,"is not a prime number.")
-elif num > 1:
-    for i in range(num,sqr):
-        num % i == 0
-    print(num,"is not a prime number.")
 else:
-    print(num,"is a prime number.")
+   print(num,"is not a prime number")
+
+# ASCII value of a character
+
+char = 'a'
+print(ord(char))   # ord is built in function for printing ascii value
